@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HAIR SALOON - Welcome</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: url('https://images.pexels.com/photos/705255/pexels-photo-705255.jpeg') center/cover no-repeat;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    h1 {
+      color: rgba(0, 0, 0, 0.8);
+      font-family: 'Algerian', sans-serif;
+      font-size: 5em;
+      margin: 0;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2, p {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    .cta-button {
+      display: block;
+      margin: 20px auto;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #333;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #555;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HAIR SALOON</h1>
+  </header>
+
+  <section>
+    <h2>Introduction</h2>
+    <p>
+      In the fast-paced world we inhabit, where first impressions speak volumes, personal grooming takes center stage. As a sanctuary for style and rejuvenation, [Salon Name] stands as a beacon of excellence in the realm of hair care services. With a commitment to enhancing natural beauty and fostering individuality, our salon offers a diverse range of services that cater to the unique needs and desires of our esteemed clientele.
+    </p>
+
+    <h2>Service Diversity</h2>
+    <p>
+      At [Salon Name], we pride ourselves on providing a comprehensive suite of hair care services that go beyond mere aesthetics. From precision haircuts and expert color treatments to revitalizing hair spa sessions, our skilled stylists are dedicated to crafting looks that reflect the personality and lifestyle of each client. Our commitment to staying abreast of the latest trends and techniques ensures that our clients leave our salon feeling not just satisfied, but empowered by their newfound confidence.
+    </p>
+
+    <h2>Expert Stylists</h2>
+    <p>
+      The heart and soul of our salon are our talented and highly-trained stylists. Armed with a passion for their craft and a keen eye for detail, our professionals strive for excellence in every service they render. Whether you seek a classic cut, a bold color transformation, or a rejuvenating hair treatment, our stylists are equipped to turn your vision into reality. Consultation is key at [Salon Name] – our stylists take the time to understand your unique preferences and lifestyle, ensuring a personalized and satisfying experience.
+    </p>
+
+    <h2>State-of-the-Art Facilities</h2>
+    <p>
+      Step into a world of sophistication and luxury when you enter [Salon Name]. Our salon boasts state-of-the-art facilities designed to create a comfortable and indulgent atmosphere for our clients. Immerse yourself in an ambiance that exudes relaxation, where every visit is not just a salon appointment but a retreat from the demands of everyday life.
+    </p>
+
+    <h2>Client-Centric Approach</h2>
+    <p>
+      Our commitment to client satisfaction extends beyond the salon chair. [Salon Name] places immense importance on building lasting relationships with our clients. We prioritize open communication and feedback, ensuring that each visit is a collaborative and enjoyable experience. Our team is dedicated to providing not just a service but a holistic journey towards self-discovery and self-expression.
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+      In the dynamic landscape of beauty and fashion, [Salon Name] stands tall as a beacon of innovation and excellence. Our commitment to delivering unparalleled hair care services, coupled with a client-centric approach, sets us apart in the industry. Elevate your style, boost your confidence, and experience the epitome of hair care services at [Salon Name]. Your journey to a revitalized and empowered self begins with us.
+    </p>
+  </section>
+
+  <a href="toggle.html" class="cta-button" id="stickyButton">Book an Appointment</a>
+
+  <script>
+    window.onscroll = function() { stickyButton() };
+
+    var button = document.getElementById("stickyButton");
+    var sticky = button.offsetTop;
+
+    function stickyButton() {
+      if (window.pageYOffset >= sticky) {
+        button.classList.add("sticky");
+      } else {
+        button.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+</html>

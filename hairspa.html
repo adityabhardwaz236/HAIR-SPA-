@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salon & Spa</title>
+<style> body {
+font-family: 'Arial', sans-serif; margin: 0;
+padding: 0;
+box-sizing: border-box;
+background: url('https://images.pexels.com/photos/705255/pexels-photo-705255.jpeg') center/cover no-repeat;
+color: #fff;
+}
+header {
+ 
+text-align: center; padding: 100px 20px;
+background-color: rgba(0, 0, 0, 0.5);
+}
+h1 {
+color: rgba(0, 0, 0, 0.8);
+font-family: 'Algerian', sans-serif; font-size: 5em;
+margin: 0;
+}
+nav {
+text-align: center;
+background: rgba(0, 0, 0, 0.8); /* Darker background for the navigation menu */ padding: 10px;
+}
+nav a { color: #fff;
+text-decoration: none; margin: 0 20px;
+font-size: 18px; font-weight: bold;
+transition: color 0.3s;
+}
+nav a:hover { color: #555;
+}
+section {
+max-width: 800px; margin: 20px auto; padding: 20px;
+background: rgba(255, 255, 255, 0.8); border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2, p {
+color: rgba(0, 0, 0, 0.6);
+}
+.cta-button { display: block; margin: 20px auto;
+ 
+padding: 15px 30px; font-size: 18px;
+font-weight: bold; text-align: center; text-decoration: none; color: #fff;
+background-color: #333; border-radius: 5px;
+transition: background-color 0.3s;
+}
+.cta-button:hover { background-color: #555;
+}
+.sticky { position: fixed; top: 0;
+width: 100%;
+z-index: 1000;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Welcome to Our Spa</h1>
+</header>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="spa.html">About</a> <!-- Link to the About page -->
+</nav>
+<section>
+<h2>Our Services</h2>
+<p>At Our Saloon , we pride ourselves on providing a comprehensive suite of hair care services that go beyond mere aesthetics. From precision haircuts and expert color treatments to revitalizing hair spa sessions, our skilled stylists are dedicated to crafting looks that reflect the personality and lifestyle of each client. Our commitment to staying abreast of the latest trends and techniques ensures that our clients leave our salon feeling not just satisfied, but empowered by their newfound confidence.</p>
+<h2>Our Mission</h2>
+<p>At our spa, we are dedicated to providing a relaxing and rejuvenating experience for our clients. We strive to exceed your expectations with our professional services and tranquil atmosphere.</p>
+<h2>Contact Us</h2>
+ 
+<p>Email: info@yourspa.com<br> Phone: (123) 456-7890<br>
+Address: 123 Spa Street, Cityville</p>
+<!-- Appointment button with link to appointment.html -->
+<a href="toggle.html" class="cta-button" id="stickyButton">Book an Appointment</a>
+</section>
+<script>
+window.onscroll = function() { stickyButton() };
+var button = document.getElementById("stickyButton"); var sticky = button.offsetTop;
+function stickyButton() {
+if (window.pageYOffset >= sticky) { button.classList.add("sticky");
+} else { button.classList.remove("sticky");
+}
+}
+</script>
+</body>
+</html>
